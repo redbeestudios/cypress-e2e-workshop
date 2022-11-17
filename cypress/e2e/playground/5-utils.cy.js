@@ -50,5 +50,16 @@ describe("Utilidades de Cypress", () => {
       cy.get('.heading').invoke('text','New Text')
       cy.contains('New Text').invoke('attr','style','color:red')
     });
-  });
+
+    it.only("Eventos en el Navegador", () => {
+        cy.contains('JavaScript Alerts').click()
+
+        const stub = cy.stub()
+        cy.on ('window:alert', stub)
+
+        cy.contains('Click for JS Alert').click().then(()=>{
+          expect(stub.getCall(0)).to.be.calledWith('I am a JS Alert')
+        })
+      });
+    });
   
