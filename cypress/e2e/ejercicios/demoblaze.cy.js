@@ -19,14 +19,6 @@ describe('Autenticación incorrecta de Usuario', () => {
 
 })
 
-// Escenario: Ordenamiento de producto por mayor precio
-// Dado que un usuario se encuentra en la página principal
-// Cuando ordena los productos de mayor a menor precio
-// Entonces los productos se reordenan con el criterio elegido
-describe('Ordenamiento de productos por mayor precio', () => {
-
-})
-
 // Escenario: Agregar un producto al carrito
 // Dado que un usuario agrega un producto
 // Cuando ingresa al ver el carrito
@@ -39,6 +31,6 @@ describe('Agregar producto al carrito de compras', () => {
 // Dado que un usuario tienen más de un producto en el carrito de compras
 // Cuando hace el checkout
 // Entonces el precio total de los item debe ser sumar a la suma de los precios de cada producto
-describe('Agregar producto al carrito de compras', () => {
+describe('Suma total de precios de los productos del carrito de compras', () => {
 
 })
