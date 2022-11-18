@@ -1,5 +1,6 @@
 //// Importamos cypress
 //// URL: https://www.saucedemo.com/
+// user: cypress_workshop - pass: cypress_workshop
 ///<reference types="cypress" />
 
 // Escenario: Autenticación correcta de usuario
@@ -7,16 +8,6 @@
 // Cuando inicia sesión
 // Entonces ingresa al shop
 describe('Autenticación correcta de Usuario', () => {
-    beforeEach(()=>{
-        cy.visit('https://www.demoblaze.com/')
-    })
-
-    it('Pruebas Login', ()=>{
-        cy.get('#login2').click()
-        cy.get('#loginusername').type('Taca',{force: true})
-        cy.get('#loginpassword').type('tuki',{force: true})
-        cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer .btn-primary').click()
-    }) 
 
 })
 
